@@ -1,3 +1,4 @@
+# strkit
 strkit is a Go package that provides some tool kit for making up builtin strings.
 
 ## Install
