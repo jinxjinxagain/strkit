@@ -10,3 +10,28 @@ func Map(s []string, proc func(ch string) string) []string {
 	}
 	return r
 }
+
+func InSlice(s []string, t string) bool {
+	for _, ss := range s {
+		if t == ss {
+			return true
+		}
+	}
+	return false
+}
+
+func InSortedSlice(s []string, t string) bool {
+	var (
+		low  = 0
+		high = len(s) - 1
+	)
+	for low < high {
+		var mid = (low + high) >> 1
+		if s[mid] < t {
+			low = mid + 1
+		} else {
+			high = mid
+		}
+	}
+	return s[low] == t
+}
