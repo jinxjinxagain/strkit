@@ -2,7 +2,7 @@ package strkit
 
 // Map iterates through strings
 // Return the strings after processed by proc func
-func Map(s []string, proc func(ch string) string) []string {
+func SliceMap(s []string, proc func(ch string) string) []string {
 	var r = []string{}
 	for _, c := range s {
 		var ac = proc(c)
@@ -11,6 +11,7 @@ func Map(s []string, proc func(ch string) string) []string {
 	return r
 }
 
+// InSlice checks whether a target string in slice
 func InSlice(s []string, t string) bool {
 	for _, ss := range s {
 		if t == ss {
@@ -20,6 +21,8 @@ func InSlice(s []string, t string) bool {
 	return false
 }
 
+// InSortedSlice checks whether a target string in sorted slice
+// faster than normal InSlice
 func InSortedSlice(s []string, t string) bool {
 	var (
 		low  = 0
