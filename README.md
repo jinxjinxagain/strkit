@@ -44,7 +44,7 @@ output will be:
 ```
 
 ## Contact
-Be free to mail [@jinxjinxagain](jinxjinxagain1994@gmail.com)
+Be free to mail [jinxjinxagain](mailto:jinxjinxagain1994@gmail.com)
 
 ## License
 
