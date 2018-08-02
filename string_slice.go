@@ -38,3 +38,12 @@ func InSortedSlice(s []string, t string) bool {
 	}
 	return s[low] == t
 }
+
+// Interfaces transfer slice of strings to slice of interfaces
+func Interfaces(s []string) []interface{} {
+	var r = []interface{}{}
+	for _, ss := range s {
+		r = append(r, ss)
+	}
+	return r
+}

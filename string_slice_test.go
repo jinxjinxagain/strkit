@@ -8,7 +8,7 @@ var AppendXCharFunc = func(x string) string {
 
 func TestMapMethod(t *testing.T) {
 	var st = []string{"1", "2", "3", "4", "5"}
-	var tt = Map(st, AppendXCharFunc)
+	var tt = SliceMap(st, AppendXCharFunc)
 	for index := range st {
 		expected(t, st[index]+"x" == tt[index], st[index]+"x", tt[index])
 	}
